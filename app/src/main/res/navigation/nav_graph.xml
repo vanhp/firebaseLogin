@@ -22,9 +22,12 @@
             app:startDestination="@id/mainFragment">
 
     <fragment
-            android:id="@+id/mainFragment"
-            android:name="com.vanh.android.firebaseui_login.MainFragment"
-            android:label="MainFragment">
+        android:id="@+id/mainFragment"
+        android:name="com.vanh.android.firebaseui_login.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
     <fragment
             android:id="@+id/settingsFragment"
@@ -36,4 +39,5 @@
             android:name="com.vanh.android.firebaseui_login.LoginFragment"
             android:label="fragment_login"
             tools:layout="@layout/fragment_login"/>
+
 </navigation>
