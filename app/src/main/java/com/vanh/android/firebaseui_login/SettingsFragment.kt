@@ -52,6 +52,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
                    TAG, "New $authenticationState state that doesn't require any UI change"
                )
            }
-   })
+        })
     }
 }
